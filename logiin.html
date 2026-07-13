@@ -3,61 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name & Age Form</title>
+    <title>KLN College Form</title>
 
     <style>
-        body {
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
             font-family: Arial, sans-serif;
-            background-color: #f2f4f7;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
         }
 
-        .form-container {
-            background: #ffffff;
-            padding: 30px;
-            width: 350px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        body{
+            background-color:#f2f4f7;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
         }
 
-        .form-container h2 {
-            text-align: center;
-            color: #003366;
-            margin-bottom: 20px;
+        .form-container{
+            background:#fff;
+            width:380px;
+            padding:30px;
+            border-radius:12px;
+            box-shadow:0 4px 15px rgba(0,0,0,0.2);
+            text-align:center;
         }
 
-        .input-box {
-            width: 100%;
-            padding: 12px;
-            margin: 10px 0;
-            border: 1px solid #cccccc;
-            border-radius: 5px;
-            box-sizing: border-box;
+        .logo{
+            width:120px;
+            height:auto;
+            margin-bottom:15px;
         }
 
-        .submit-btn {
-            width: 100%;
-            padding: 12px;
-            background-color: #003366;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
+        h2{
+            color:#003366;
+            margin-bottom:20px;
         }
 
-        .submit-btn:hover {
-            background-color: #0055aa;
+        .input-box{
+            width:100%;
+            padding:12px;
+            margin-bottom:15px;
+            border:1px solid #ccc;
+            border-radius:5px;
+            font-size:16px;
+        }
+
+        .submit-btn{
+            width:100%;
+            padding:12px;
+            background:#003366;
+            color:white;
+            border:none;
+            border-radius:5px;
+            font-size:16px;
+            cursor:pointer;
+        }
+
+        .submit-btn:hover{
+            background:#0055aa;
+        }
+
+        .footer{
+            margin-top:15px;
+            font-size:12px;
+            color:#666;
         }
     </style>
 </head>
 <body>
 
     <div class="form-container">
+
+        <!-- Replace with your logo file -->
+        <img src="logo.png" alt="KLN College Logo" class="logo">
+
         <h2>User Information</h2>
 
         <form action="https://formspree.io/f/xeeyqapj" method="POST">
@@ -66,7 +87,7 @@
                 type="text"
                 name="name"
                 class="input-box"
-                placeholder="Enter Your Name"
+                placeholder="Name"
                 required
             >
 
@@ -74,7 +95,7 @@
                 type="number"
                 name="age"
                 class="input-box"
-                placeholder="Enter Your Age"
+                placeholder="Age"
                 min="1"
                 max="120"
                 required
@@ -85,6 +106,11 @@
             </button>
 
         </form>
+
+        <div class="footer">
+            KLN College of Engineering
+        </div>
+
     </div>
 
 </body>
