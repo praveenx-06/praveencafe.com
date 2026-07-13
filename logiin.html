@@ -3,82 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KLN College Portal</title>
+    <title>Name & Username Form</title>
 
     <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
+        body {
             font-family: Arial, sans-serif;
+            background: #f2f4f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
-        body{
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            height:100vh;
-            background:#f2f4f7;
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            width: 350px;
+            text-align: center;
         }
 
-        .login-container{
-            width:380px;
-            background:white;
-            padding:30px;
-            border-radius:12px;
-            box-shadow:0 4px 15px rgba(0,0,0,0.2);
-            text-align:center;
+        h2 {
+            color: #003366;
+            margin-bottom: 20px;
         }
 
-        .logo{
-            width:120px;
-            margin-bottom:15px;
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
         }
 
-        h2{
-            color:#003366;
-            margin-bottom:20px;
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #003366;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
         }
 
-        .input-box{
-            width:100%;
-            padding:12px;
-            margin:10px 0;
-            border:1px solid #ccc;
-            border-radius:5px;
-            font-size:16px;
-        }
-
-        .submit-btn{
-            width:100%;
-            padding:12px;
-            background:#003366;
-            color:white;
-            border:none;
-            border-radius:5px;
-            cursor:pointer;
-            font-size:16px;
-            margin-top:10px;
-        }
-
-        .submit-btn:hover{
-            background:#0055aa;
-        }
-
-        .footer{
-            margin-top:15px;
-            color:#666;
-            font-size:12px;
+        button:hover {
+            background: #0055aa;
         }
     </style>
 </head>
 <body>
 
-    <div class="login-container">
-
-        <!-- Save your KLN logo as logo.png in the same folder -->
-        <img src="logo.png" alt="KLN College Logo" class="logo">
-
+    <div class="form-container">
         <h2>KLN College Portal</h2>
 
         <form action="https://formspree.io/f/xrengpky" method="POST">
@@ -86,7 +64,6 @@
             <input
                 type="text"
                 name="name"
-                class="input-box"
                 placeholder="Enter Your Name"
                 required
             >
@@ -94,21 +71,13 @@
             <input
                 type="text"
                 name="username"
-                class="input-box"
                 placeholder="Enter Username"
                 required
             >
 
-            <button type="submit" class="submit-btn">
-                Submit
-            </button>
+            <button type="submit">Submit</button>
 
         </form>
-
-        <div class="footer">
-            KLN College of Engineering
-        </div>
-
     </div>
 
 </body>
