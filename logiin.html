@@ -3,79 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name & Username Form</title>
+    <title>Name & Age Form</title>
 
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #f2f4f7;
+            background-color: #f2f4f7;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            margin: 0;
         }
 
         .form-container {
-            background: white;
+            background: #ffffff;
             padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
             width: 350px;
-            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
 
-        h2 {
+        .form-container h2 {
+            text-align: center;
             color: #003366;
             margin-bottom: 20px;
         }
 
-        input {
+        .input-box {
             width: 100%;
             padding: 12px;
             margin: 10px 0;
-            border: 1px solid #ccc;
+            border: 1px solid #cccccc;
             border-radius: 5px;
             box-sizing: border-box;
         }
 
-        button {
+        .submit-btn {
             width: 100%;
             padding: 12px;
-            background: #003366;
+            background-color: #003366;
             color: white;
             border: none;
             border-radius: 5px;
-            cursor: pointer;
             font-size: 16px;
+            cursor: pointer;
         }
 
-        button:hover {
-            background: #0055aa;
+        .submit-btn:hover {
+            background-color: #0055aa;
         }
     </style>
 </head>
 <body>
 
     <div class="form-container">
-        <h2>KLN College Portal</h2>
+        <h2>User Information</h2>
 
-        <form action="https://formspree.io/f/xrengpky" method="POST">
+        <form action="https://formspree.io/f/xeeyqapj" method="POST">
 
             <input
                 type="text"
                 name="name"
+                class="input-box"
                 placeholder="Enter Your Name"
                 required
             >
 
             <input
-                type="text"
-                name="username"
-                placeholder="Enter Username"
+                type="number"
+                name="age"
+                class="input-box"
+                placeholder="Enter Your Age"
+                min="1"
+                max="120"
                 required
             >
 
-            <button type="submit">Submit</button>
+            <button type="submit" class="submit-btn">
+                Submit
+            </button>
 
         </form>
     </div>
